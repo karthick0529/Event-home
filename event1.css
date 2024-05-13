@@ -52,11 +52,46 @@
         width: 150px;
         display: inline-block;
         text-align: right;
-        margin-bottom:20px;
+        margin-bottom: 20px;
       }
 
       input {
         height: 30px;
         width: 200px;
       }
+
+
+      @media only screen and (max-width: 855px) {
+        input {
+          height: 30px;
+          width: 100px;
+        }
+      }
+
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          height: 600px;
+          align-items: center;
+        }
+        .left-box,
+        .right {
+          width: 80%;
+          text-align: center;
+        }
+        .left-box img {
+          width: 100%;
+          height: auto;
+          
+        }
+
+        input {
+          height: 30px;
+          width: 150px;
+        }
+      }
+
+
     
